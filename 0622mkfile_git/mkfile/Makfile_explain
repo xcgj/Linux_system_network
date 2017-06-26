@@ -1,0 +1,127 @@
+# 《1》默认写法
+# a.out 目标
+# a.o b.o c.o   依赖
+# gcc a.o b.o c.o   命令
+# 命令被执行的条件是：依赖文件的修改时间比目标文件更加接近现在
+a.out: a.o b.o c.o
+    gcc a.o b.o c.o
+
+# 《2》依赖变量简化
+# 用变量简化以上两行代码：
+#       {}和()的作用一样
+    allobjs := a.o b.o c.o
+    a.out: ${allobjs}
+    gcc $(allobjs)
+    
+# 《3》命令变量简化
+# a.out是默认名字，可以指定生成的可执行文件名字：
+    target := b.out
+    allobjs := a.o b.o c.o
+    ${target}: ${allobjs}
+    gcc $(allobjs) -o ${target}
+
+# 《4》自动变量和all的用法
+# 可以再对以上进行简化
+# $@：表示目标
+# $^：表示所有依赖
+# $<：表示第一个依赖，本例为a.o
+# $(CC)：就是gcc，是makefile中自己维护的变量，都是大写的
+# 自动变量只能在makefile的命令中使用
+target := b.out
+allobjs := a.o b.o c.o
+# 第一个目标通常被称作all，且没有命令：
+all: ${target}
+${target}: ${allobjs}
+    $(CC) -o $@ $^
+    
+# 《5》函数的使用
+# 对以上内容再简化:变量不用写.o
+    target := b.out
+# makefile中所有的函数都是有返回值的，使用$符获取，函数参数写在函数名后面
+    src = $(wildcard ./*c)
+# 或者用shell的ls命令列出所有.c文件
+srcs := $(shell ls *.c)
+# 用匹配替换函数将.c文件替换成.o
+obj = $(patsubst ./%.o, ./%.c, $(src))
+# 或者：
+objs := $(srcs:.c=.o)
+all: $(taeget)
+$(target): $(objs)
+    $(CC) -o $@ $^
+
+# 《6》默认自动推导依赖的缺陷：不能推导出：a.o依赖于a.c和a.h两个文件
+# 解决方法：利用子makfile
+target = b.out
+srcs = $(shell ls *.c)
+objs = $(srcs:.c=.o)
+
+# gcc -MM a.c：自动推导依赖关系，
+#   a.c包含了头文件a.h，所以推导出a.o依赖于a.c和a.h：   a.o: a.c a.h
+# 1指明有一堆.d格式的文件，他们的名字和.c文件一样。可以在变量deps中找到
+#   注意：这一步并没有创造出.d文件，只是和别人说deps中有这么些文件的名字
+deps:= $(srcs:.c=.d)
+
+# 3把.d文件include到子makefile中，
+#   这一步相当于对每一个.d文件进行了一次make -f .d操作，
+#   由于每个.d文件里面都有一个依赖关系，会自动增加很多依赖，如 a.o: a.c a.h
+# 但是代码刚刚执行到这一步目前是没有.d文件的，所以会去下面找.d的依赖，
+#   结果就在下两句代码找到了通配依赖，用重定向的方式生成了.d文件，
+#   并且内容是.c文件的依赖关系
+-include $(deps)
+
+# 重定向：如果目标文件不存在，会新建一个这个文件
+# 2将gcc -MM .c的输出(a.o: a.c a.h)重定向到.d文件，这一步创造了.d文件
+%.d: %.c
+    gcc -MM $< > $@
+
+all: $(target)
+$(target): $(objs)
+    $(CC) -o $@ $^
+
+
+
+
+
+
+# 依赖可以是迭代的
+# 《1》默认写法
+a.o: a.c
+    gcc -c a.c
+b.o: b.c
+    gcc -c b.c
+c.o: c.c
+    gcc -c c.c
+# 《2》缺省规则
+# 由于Makefile是有缺省规则的，x.o文件默认依赖于x.c文件并且由x.c文件生成
+#   所以下面6行都可以省略不写
+a.o: a.c
+    gcc -c a.c
+b.o: b.c
+    gcc -c b.c
+c.o: c.c
+    gcc -c c.c
+# 《3》模式规则
+# 用通配符%
+%.o:%.c
+    gcc -c $< -o $
+
+
+
+
+
+# 增加其他命令：
+# 调用clean命令时使用：make clean
+# 使用：make    只会调用第一个命令
+# -:如果命令执行失败，忽略这个命令继续向下执行
+clean: 
+    -rm $(target) *.o -rf
+    
+        
+        
+        
+        
+# echo输出
+# @的意思是不打印命令，只打印命令执行的结果
+test:
+    @echo source file is: $(srcs)
+    @echo target file is: $(objs)

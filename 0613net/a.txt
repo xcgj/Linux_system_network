@@ -1,0 +1,12 @@
+总用量 72
+drwxrwxr-x  2 c01 c01 4096  6月 13 22:27 ./
+drwxr-xr-x 37 c01 c01 4096  6月 13 22:27 ../
+-rw-rw-r--  1 c01 c01    0  6月 13 22:27 a.txt
+-rwxrwxr-x  1 c01 c01 8875  6月 13 21:14 c*
+-rwxrwxr-x  1 c01 c01 8871  6月 13 22:26 cf*
+-rw-rw-r--  1 c01 c01  778  6月 13 22:25 cf.c
+-rw-rw-r--  1 c01 c01 1413  6月 13 21:44 client.c
+-rwxrwxr-x  1 c01 c01 9077  6月 13 21:14 s*
+-rw-rw-r--  1 c01 c01 2759  6月 13 21:44 server.c
+-rwxrwxr-x  1 c01 c01 9125  6月 13 22:26 sf*
+-rw-rw-r--  1 c01 c01 1062  6月 13 22:26 sf.c

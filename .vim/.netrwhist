@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/xuegl/oxs/xs/src/dmg/qt-prj/dmg'
+let g:netrw_dirhist_2='/home/xuegl/oxs/xs/src/dmg/qt-prj'
+let g:netrw_dirhist_3='/home/xuegl/oxs/xs/src/dmg/qt-prj/dmg-genkey'
+let g:netrw_dirhist_4='/home/xuegl/oxs/xs/src/dmg/qt-prj'
+let g:netrw_dirhist_5='/home/xuegl/oxs/xs/src/dmg/qt-prj/dmg-genkey'

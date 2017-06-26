@@ -1,0 +1,6 @@
+libevent
+libevent/compat/sys
+libevent/include/event2
+libevent/test
+libevent/WIN32-Code
+libevent/WIN32-Code/event2

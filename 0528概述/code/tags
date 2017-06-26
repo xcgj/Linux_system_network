@@ -1,0 +1,286 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI	ai.cpp	/^AI::AI(Board* board) : board(board)$/;"	f	class:AI	signature:(Board* board)
+AI	ai.h	/^    AI(Board* board);$/;"	p	class:AI	access:public	signature:(Board* board)
+AI	ai.h	/^class AI$/;"	c
+AI::AI	ai.cpp	/^AI::AI(Board* board) : board(board)$/;"	f	class:AI	signature:(Board* board)
+AI::AI	ai.h	/^    AI(Board* board);$/;"	p	class:AI	access:public	signature:(Board* board)
+AI::addStep	ai.cpp	/^void AI::addStep(QList<Step *> &steps, int moveid, int killid, int row, int col)$/;"	f	class:AI	signature:(QList<Step *> &steps, int moveid, int killid, int row, int col)
+AI::addStep	ai.h	/^    void addStep(QList<Step*>& steps, int moveid, int killid, int row, int col);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, int moveid, int killid, int row, int col)
+AI::board	ai.h	/^    Board* board;$/;"	m	class:AI	access:private
+AI::curScore	ai.h	/^    int curScore;$/;"	m	class:AI	access:private
+AI::fakeMove	ai.cpp	/^void AI::fakeMove(Step *step)$/;"	f	class:AI	signature:(Step *step)
+AI::fakeMove	ai.h	/^    void fakeMove(Step* step);$/;"	p	class:AI	access:private	signature:(Step* step)
+AI::getAllPossibleMove	ai.cpp	/^void AI::getAllPossibleMove(QList<Step *> &steps)$/;"	f	class:AI	signature:(QList<Step *> &steps)
+AI::getAllPossibleMove	ai.h	/^    void getAllPossibleMove(QList<Step*>& steps);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps)
+AI::getAllPossibleMoveBing	ai.cpp	/^void AI::getAllPossibleMoveBing(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveBing	ai.h	/^    void getAllPossibleMoveBing(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMoveChe	ai.cpp	/^void AI::getAllPossibleMoveChe(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveChe	ai.h	/^    void getAllPossibleMoveChe(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMoveJiang	ai.cpp	/^void AI::getAllPossibleMoveJiang(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveJiang	ai.h	/^    void getAllPossibleMoveJiang(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMoveMa	ai.cpp	/^void AI::getAllPossibleMoveMa(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveMa	ai.h	/^    void getAllPossibleMoveMa(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMovePao	ai.cpp	/^void AI::getAllPossibleMovePao(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMovePao	ai.h	/^    void getAllPossibleMovePao(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMoveShi	ai.cpp	/^void AI::getAllPossibleMoveShi(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveShi	ai.h	/^    void getAllPossibleMoveShi(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getAllPossibleMoveXiang	ai.cpp	/^void AI::getAllPossibleMoveXiang(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+AI::getAllPossibleMoveXiang	ai.h	/^    void getAllPossibleMoveXiang(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+AI::getMaxScore	ai.cpp	/^int AI::getMaxScore(int level, int curMinScore)$/;"	f	class:AI	signature:(int level, int curMinScore)
+AI::getMaxScore	ai.h	/^    int getMaxScore(int level, int curMinScore);$/;"	p	class:AI	access:private	signature:(int level, int curMinScore)
+AI::getMinScore	ai.cpp	/^int AI::getMinScore(int level, int curMaxScore)$/;"	f	class:AI	signature:(int level, int curMaxScore)
+AI::getMinScore	ai.h	/^    int getMinScore(int level, int curMaxScore);$/;"	p	class:AI	access:private	signature:(int level, int curMaxScore)
+AI::init	ai.cpp	/^void AI::init()$/;"	f	class:AI	signature:()
+AI::init	ai.h	/^    void init();$/;"	p	class:AI	access:public	signature:()
+AI::nextStep	ai.cpp	/^Step *AI::nextStep(int level)$/;"	f	class:AI	signature:(int level)
+AI::nextStep	ai.h	/^    Step* nextStep(int level);$/;"	p	class:AI	access:public	signature:(int level)
+AI::unfakeMove	ai.cpp	/^void AI::unfakeMove(Step *step)$/;"	f	class:AI	signature:(Step *step)
+AI::unfakeMove	ai.h	/^    void unfakeMove(Step* step);$/;"	p	class:AI	access:private	signature:(Step* step)
+AI_H	ai.h	2;"	d
+BING	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+BOARD_H	board.h	2;"	d
+Board	board.cpp	/^Board::Board(QWidget *parent) : QWidget(parent), d(Util::d)$/;"	f	class:Board	signature:(QWidget *parent)
+Board	board.h	/^    explicit Board(QWidget *parent = 0);$/;"	p	class:Board	access:public	signature:(QWidget *parent = 0)
+Board	board.h	/^class Board : public QWidget$/;"	c	inherits:QWidget
+Board::Board	board.cpp	/^Board::Board(QWidget *parent) : QWidget(parent), d(Util::d)$/;"	f	class:Board	signature:(QWidget *parent)
+Board::Board	board.h	/^    explicit Board(QWidget *parent = 0);$/;"	p	class:Board	access:public	signature:(QWidget *parent = 0)
+Board::addStep	board.cpp	/^void Board::addStep(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+Board::addStep	board.h	/^    void addStep(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::ai	board.h	/^    AI* ai;$/;"	m	class:Board	access:public
+Board::backOne	board.cpp	/^void Board::backOne()$/;"	f	class:Board	signature:()
+Board::backOne	board.h	/^    void backOne();$/;"	p	class:Board	access:public	signature:()
+Board::canMove	board.cpp	/^bool Board::canMove(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+Board::canMove	board.h	/^    bool canMove(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveBing	board.cpp	/^bool Board::canMoveBing(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+Board::canMoveBing	board.h	/^    bool canMoveBing(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveChe	board.cpp	/^bool Board::canMoveChe(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+Board::canMoveChe	board.h	/^    bool canMoveChe(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveJiang	board.cpp	/^bool Board::canMoveJiang(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+Board::canMoveJiang	board.h	/^    bool canMoveJiang(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveMa	board.cpp	/^bool Board::canMoveMa(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+Board::canMoveMa	board.h	/^    bool canMoveMa(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMovePao	board.cpp	/^bool Board::canMovePao(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+Board::canMovePao	board.h	/^    bool canMovePao(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveShi	board.cpp	/^bool Board::canMoveShi(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+Board::canMoveShi	board.h	/^    bool canMoveShi(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::canMoveXiang	board.cpp	/^bool Board::canMoveXiang(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+Board::canMoveXiang	board.h	/^    bool canMoveXiang(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::clearSteps	board.cpp	/^void Board::clearSteps()$/;"	f	class:Board	signature:()
+Board::clearSteps	board.h	/^    void clearSteps();$/;"	p	class:Board	access:public	signature:()
+Board::d	board.h	/^    int& d;$/;"	m	class:Board	access:public
+Board::drawCross	board.cpp	/^void Board::drawCross(QPainter &p, int row, int col)$/;"	f	class:Board	signature:(QPainter &p, int row, int col)
+Board::drawCross	board.h	/^    void drawCross(QPainter& p, int row, int col);$/;"	p	class:Board	access:public	signature:(QPainter& p, int row, int col)
+Board::drawPlate	board.cpp	/^void Board::drawPlate(QPainter &p)$/;"	f	class:Board	signature:(QPainter &p)
+Board::drawPlate	board.h	/^    void drawPlate(QPainter& p);$/;"	p	class:Board	access:public	signature:(QPainter& p)
+Board::getStoneCount	board.cpp	/^int Board::getStoneCount(int row1, int col1, int row2, int col2)$/;"	f	class:Board	signature:(int row1, int col1, int row2, int col2)
+Board::getStoneCount	board.h	/^    int getStoneCount(int row1, int col1, int row2, int col2);$/;"	p	class:Board	access:public	signature:(int row1, int col1, int row2, int col2)
+Board::getStoneId	board.cpp	/^int Board::getStoneId(int row, int col)$/;"	f	class:Board	signature:(int row, int col)
+Board::getStoneId	board.h	/^    int getStoneId(int row, int col);$/;"	p	class:Board	access:public	signature:(int row, int col)
+Board::init	board.cpp	/^void Board::init()$/;"	f	class:Board	signature:()
+Board::init	board.h	/^    void init();$/;"	p	class:Board	access:public	signature:()
+Board::load	board.cpp	/^void Board::load(QString filename)$/;"	f	class:Board	signature:(QString filename)
+Board::load	board.h	/^    void load(QString filename);$/;"	p	class:Board	access:public	signature:(QString filename)
+Board::mousePressEvent	board.cpp	/^void Board::mousePressEvent(QMouseEvent *ev)$/;"	f	class:Board	signature:(QMouseEvent *ev)
+Board::mousePressEvent	board.h	/^    void mousePressEvent(QMouseEvent *ev);$/;"	p	class:Board	access:public	signature:(QMouseEvent *ev)
+Board::moveStone	board.cpp	/^void Board::moveStone(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+Board::moveStone	board.h	/^    void moveStone(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+Board::paintEvent	board.cpp	/^void Board::paintEvent(QPaintEvent *)$/;"	f	class:Board	signature:(QPaintEvent *)
+Board::paintEvent	board.h	/^    void paintEvent(QPaintEvent *ev);$/;"	p	class:Board	access:public	signature:(QPaintEvent *ev)
+Board::redTurn	board.h	/^    bool redTurn;$/;"	m	class:Board	access:public
+Board::s	board.h	/^    Stone s[32];$/;"	m	class:Board	access:public
+Board::save	board.cpp	/^void Board::save(QString filename)$/;"	f	class:Board	signature:(QString filename)
+Board::save	board.h	/^    void save(QString filename);$/;"	p	class:Board	access:public	signature:(QString filename)
+Board::selectId	board.h	/^    int selectId; \/\/ 如果selectId是-1，那么说明没有棋子被选中$/;"	m	class:Board	access:public
+Board::selectStone	board.cpp	/^void Board::selectStone(int select)$/;"	f	class:Board	signature:(int select)
+Board::selectStone	board.h	/^    void selectStone(int select);$/;"	p	class:Board	access:public	signature:(int select)
+Board::steps	board.h	/^    QList<Step*> steps;$/;"	m	class:Board	access:public
+CHE	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+INFINITE	ai.cpp	/^static int INFINITE = 1000000;$/;"	v	file:
+JIANG	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+MA	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+MAINWINDOW_H	mainwindow.h	2;"	d
+MainWindow	mainwindow.cpp	/^MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)$/;"	f	class:MainWindow	signature:(QWidget *parent)
+MainWindow	mainwindow.h	/^    explicit MainWindow(QWidget *parent = 0);$/;"	p	class:MainWindow	access:public	signature:(QWidget *parent = 0)
+MainWindow	mainwindow.h	/^class MainWindow : public QMainWindow$/;"	c	inherits:QMainWindow
+MainWindow::MainWindow	mainwindow.cpp	/^MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)$/;"	f	class:MainWindow	signature:(QWidget *parent)
+MainWindow::MainWindow	mainwindow.h	/^    explicit MainWindow(QWidget *parent = 0);$/;"	p	class:MainWindow	access:public	signature:(QWidget *parent = 0)
+MainWindow::board	mainwindow.h	/^    Board* board;$/;"	m	class:MainWindow	access:public
+MainWindow::onBack	mainwindow.cpp	/^void MainWindow::onBack()$/;"	f	class:MainWindow	signature:()
+MainWindow::onBack	mainwindow.h	/^    void onBack();$/;"	p	class:MainWindow	access:public	signature:()
+MainWindow::onLoad	mainwindow.cpp	/^void MainWindow::onLoad()$/;"	f	class:MainWindow	signature:()
+MainWindow::onLoad	mainwindow.h	/^    void onLoad();$/;"	p	class:MainWindow	access:public	signature:()
+MainWindow::onNew	mainwindow.cpp	/^void MainWindow::onNew()$/;"	f	class:MainWindow	signature:()
+MainWindow::onNew	mainwindow.h	/^    void onNew();$/;"	p	class:MainWindow	access:public	signature:()
+MainWindow::onSave	mainwindow.cpp	/^void MainWindow::onSave()$/;"	f	class:MainWindow	signature:()
+MainWindow::onSave	mainwindow.h	/^    void onSave();$/;"	p	class:MainWindow	access:public	signature:()
+PAO	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+SHI	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+STONE_H	stone.h	2;"	d
+Step	board.h	/^struct Step$/;"	s
+Step::colFrom	board.h	/^    int colFrom;$/;"	m	struct:Step	access:public
+Step::colTo	board.h	/^    int colTo;$/;"	m	struct:Step	access:public
+Step::killid	board.h	/^    int killid;$/;"	m	struct:Step	access:public
+Step::moveid	board.h	/^    int moveid;$/;"	m	struct:Step	access:public
+Step::rowFrom	board.h	/^    int rowFrom;$/;"	m	struct:Step	access:public
+Step::rowTo	board.h	/^    int rowTo;$/;"	m	struct:Step	access:public
+Stone	stone.cpp	/^Stone::Stone() : d(Util::d)$/;"	f	class:Stone	signature:()
+Stone	stone.h	/^    Stone();$/;"	p	class:Stone	access:public	signature:()
+Stone	stone.h	/^class Stone$/;"	c
+Stone::BING	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::CHE	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::JIANG	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::MA	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::PAO	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::SHI	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::Stone	stone.cpp	/^Stone::Stone() : d(Util::d)$/;"	f	class:Stone	signature:()
+Stone::Stone	stone.h	/^    Stone();$/;"	p	class:Stone	access:public	signature:()
+Stone::Type	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	g	class:Stone	access:public
+Stone::XIANG	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+Stone::col	stone.h	/^    int col;$/;"	m	class:Stone	access:public
+Stone::d	stone.h	/^    int& d;$/;"	m	class:Stone	access:public
+Stone::dead	stone.h	/^    bool dead;$/;"	m	class:Stone	access:public
+Stone::draw	stone.cpp	/^void Stone::draw(QPainter &p, int selectId)$/;"	f	class:Stone	signature:(QPainter &p, int selectId)
+Stone::draw	stone.h	/^    void draw(QPainter& p, int selectId);$/;"	p	class:Stone	access:public	signature:(QPainter& p, int selectId)
+Stone::id	stone.h	/^    int id; \/\/ 0~15 红色 16～31黑色$/;"	m	class:Stone	access:public
+Stone::row	stone.h	/^    int row;$/;"	m	class:Stone	access:public
+Stone::type	stone.h	/^    Type type;$/;"	m	class:Stone	access:public
+Type	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	g	class:Stone	access:public
+UTIL_H	util.h	2;"	d
+Util	util.cpp	/^Util::Util()$/;"	f	class:Util	signature:()
+Util	util.h	/^    Util();$/;"	p	class:Util	access:public	signature:()
+Util	util.h	/^class Util$/;"	c
+Util::Util	util.cpp	/^Util::Util()$/;"	f	class:Util	signature:()
+Util::Util	util.h	/^    Util();$/;"	p	class:Util	access:public	signature:()
+Util::color	util.cpp	/^bool Util::color(int id)$/;"	f	class:Util	signature:(int id)
+Util::color	util.h	/^    static bool color(int id);$/;"	p	class:Util	access:public	signature:(int id)
+Util::d	util.cpp	/^int Util::d = 40;$/;"	m	class:Util	file:
+Util::d	util.h	/^    static int d;$/;"	m	class:Util	access:public
+Util::getPlateCood	util.cpp	/^bool Util::getPlateCood(QPoint pt, int &row, int &col)$/;"	f	class:Util	signature:(QPoint pt, int &row, int &col)
+Util::getPlateCood	util.h	/^    static bool getPlateCood(QPoint pt, int &row, int &col);$/;"	p	class:Util	access:public	signature:(QPoint pt, int &row, int &col)
+Util::getStonePoint	util.cpp	/^QPoint Util::getStonePoint(int row, int col)$/;"	f	class:Util	signature:(int row, int col)
+Util::getStonePoint	util.h	/^    static QPoint getStonePoint(int row, int col);$/;"	p	class:Util	access:public	signature:(int row, int col)
+Util::getStoneRect	util.cpp	/^QRect Util::getStoneRect(int row, int col)$/;"	f	class:Util	signature:(int row, int col)
+Util::getStoneRect	util.h	/^    static QRect getStoneRect(int row, int col);$/;"	p	class:Util	access:public	signature:(int row, int col)
+XIANG	stone.h	/^    enum Type {JIANG, SHI, XIANG, CHE, MA, PAO, BING};$/;"	e	enum:Stone::Type
+addStep	ai.cpp	/^void AI::addStep(QList<Step *> &steps, int moveid, int killid, int row, int col)$/;"	f	class:AI	signature:(QList<Step *> &steps, int moveid, int killid, int row, int col)
+addStep	ai.h	/^    void addStep(QList<Step*>& steps, int moveid, int killid, int row, int col);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, int moveid, int killid, int row, int col)
+addStep	board.cpp	/^void Board::addStep(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+addStep	board.h	/^    void addStep(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+ai	board.h	/^    AI* ai;$/;"	m	class:Board	access:public
+backOne	board.cpp	/^void Board::backOne()$/;"	f	class:Board	signature:()
+backOne	board.h	/^    void backOne();$/;"	p	class:Board	access:public	signature:()
+board	ai.h	/^    Board* board;$/;"	m	class:AI	access:private
+board	mainwindow.h	/^    Board* board;$/;"	m	class:MainWindow	access:public
+canMove	board.cpp	/^bool Board::canMove(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+canMove	board.h	/^    bool canMove(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveBing	board.cpp	/^bool Board::canMoveBing(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+canMoveBing	board.h	/^    bool canMoveBing(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveChe	board.cpp	/^bool Board::canMoveChe(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+canMoveChe	board.h	/^    bool canMoveChe(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveJiang	board.cpp	/^bool Board::canMoveJiang(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+canMoveJiang	board.h	/^    bool canMoveJiang(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveMa	board.cpp	/^bool Board::canMoveMa(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+canMoveMa	board.h	/^    bool canMoveMa(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMovePao	board.cpp	/^bool Board::canMovePao(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+canMovePao	board.h	/^    bool canMovePao(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveShi	board.cpp	/^bool Board::canMoveShi(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+canMoveShi	board.h	/^    bool canMoveShi(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+canMoveXiang	board.cpp	/^bool Board::canMoveXiang(int select, int , int row, int col)$/;"	f	class:Board	signature:(int select, int , int row, int col)
+canMoveXiang	board.h	/^    bool canMoveXiang(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+clearSteps	board.cpp	/^void Board::clearSteps()$/;"	f	class:Board	signature:()
+clearSteps	board.h	/^    void clearSteps();$/;"	p	class:Board	access:public	signature:()
+col	stone.h	/^    int col;$/;"	m	class:Stone	access:public
+colFrom	board.h	/^    int colFrom;$/;"	m	struct:Step	access:public
+colTo	board.h	/^    int colTo;$/;"	m	struct:Step	access:public
+color	util.cpp	/^bool Util::color(int id)$/;"	f	class:Util	signature:(int id)
+color	util.h	/^    static bool color(int id);$/;"	p	class:Util	access:public	signature:(int id)
+curScore	ai.h	/^    int curScore;$/;"	m	class:AI	access:private
+d	board.h	/^    int& d;$/;"	m	class:Board	access:public
+d	stone.h	/^    int& d;$/;"	m	class:Stone	access:public
+d	util.cpp	/^int Util::d = 40;$/;"	m	class:Util	file:
+d	util.h	/^    static int d;$/;"	m	class:Util	access:public
+dead	stone.h	/^    bool dead;$/;"	m	class:Stone	access:public
+draw	stone.cpp	/^void Stone::draw(QPainter &p, int selectId)$/;"	f	class:Stone	signature:(QPainter &p, int selectId)
+draw	stone.h	/^    void draw(QPainter& p, int selectId);$/;"	p	class:Stone	access:public	signature:(QPainter& p, int selectId)
+drawCross	board.cpp	/^void Board::drawCross(QPainter &p, int row, int col)$/;"	f	class:Board	signature:(QPainter &p, int row, int col)
+drawCross	board.h	/^    void drawCross(QPainter& p, int row, int col);$/;"	p	class:Board	access:public	signature:(QPainter& p, int row, int col)
+drawPlate	board.cpp	/^void Board::drawPlate(QPainter &p)$/;"	f	class:Board	signature:(QPainter &p)
+drawPlate	board.h	/^    void drawPlate(QPainter& p);$/;"	p	class:Board	access:public	signature:(QPainter& p)
+fakeMove	ai.cpp	/^void AI::fakeMove(Step *step)$/;"	f	class:AI	signature:(Step *step)
+fakeMove	ai.h	/^    void fakeMove(Step* step);$/;"	p	class:AI	access:private	signature:(Step* step)
+getAllPossibleMove	ai.cpp	/^void AI::getAllPossibleMove(QList<Step *> &steps)$/;"	f	class:AI	signature:(QList<Step *> &steps)
+getAllPossibleMove	ai.h	/^    void getAllPossibleMove(QList<Step*>& steps);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps)
+getAllPossibleMoveBing	ai.cpp	/^void AI::getAllPossibleMoveBing(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveBing	ai.h	/^    void getAllPossibleMoveBing(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMoveChe	ai.cpp	/^void AI::getAllPossibleMoveChe(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveChe	ai.h	/^    void getAllPossibleMoveChe(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMoveJiang	ai.cpp	/^void AI::getAllPossibleMoveJiang(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveJiang	ai.h	/^    void getAllPossibleMoveJiang(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMoveMa	ai.cpp	/^void AI::getAllPossibleMoveMa(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveMa	ai.h	/^    void getAllPossibleMoveMa(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMovePao	ai.cpp	/^void AI::getAllPossibleMovePao(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMovePao	ai.h	/^    void getAllPossibleMovePao(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMoveShi	ai.cpp	/^void AI::getAllPossibleMoveShi(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveShi	ai.h	/^    void getAllPossibleMoveShi(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getAllPossibleMoveXiang	ai.cpp	/^void AI::getAllPossibleMoveXiang(QList<Step *> &steps, Stone* s)$/;"	f	class:AI	signature:(QList<Step *> &steps, Stone* s)
+getAllPossibleMoveXiang	ai.h	/^    void getAllPossibleMoveXiang(QList<Step*>& steps, Stone* s);$/;"	p	class:AI	access:private	signature:(QList<Step*>& steps, Stone* s)
+getMaxScore	ai.cpp	/^int AI::getMaxScore(int level, int curMinScore)$/;"	f	class:AI	signature:(int level, int curMinScore)
+getMaxScore	ai.h	/^    int getMaxScore(int level, int curMinScore);$/;"	p	class:AI	access:private	signature:(int level, int curMinScore)
+getMinScore	ai.cpp	/^int AI::getMinScore(int level, int curMaxScore)$/;"	f	class:AI	signature:(int level, int curMaxScore)
+getMinScore	ai.h	/^    int getMinScore(int level, int curMaxScore);$/;"	p	class:AI	access:private	signature:(int level, int curMaxScore)
+getPlateCood	util.cpp	/^bool Util::getPlateCood(QPoint pt, int &row, int &col)$/;"	f	class:Util	signature:(QPoint pt, int &row, int &col)
+getPlateCood	util.h	/^    static bool getPlateCood(QPoint pt, int &row, int &col);$/;"	p	class:Util	access:public	signature:(QPoint pt, int &row, int &col)
+getStoneCount	board.cpp	/^int Board::getStoneCount(int row1, int col1, int row2, int col2)$/;"	f	class:Board	signature:(int row1, int col1, int row2, int col2)
+getStoneCount	board.h	/^    int getStoneCount(int row1, int col1, int row2, int col2);$/;"	p	class:Board	access:public	signature:(int row1, int col1, int row2, int col2)
+getStoneId	board.cpp	/^int Board::getStoneId(int row, int col)$/;"	f	class:Board	signature:(int row, int col)
+getStoneId	board.h	/^    int getStoneId(int row, int col);$/;"	p	class:Board	access:public	signature:(int row, int col)
+getStonePoint	util.cpp	/^QPoint Util::getStonePoint(int row, int col)$/;"	f	class:Util	signature:(int row, int col)
+getStonePoint	util.h	/^    static QPoint getStonePoint(int row, int col);$/;"	p	class:Util	access:public	signature:(int row, int col)
+getStoneRect	util.cpp	/^QRect Util::getStoneRect(int row, int col)$/;"	f	class:Util	signature:(int row, int col)
+getStoneRect	util.h	/^    static QRect getStoneRect(int row, int col);$/;"	p	class:Util	access:public	signature:(int row, int col)
+id	stone.h	/^    int id; \/\/ 0~15 红色 16～31黑色$/;"	m	class:Stone	access:public
+init	ai.cpp	/^void AI::init()$/;"	f	class:AI	signature:()
+init	ai.h	/^    void init();$/;"	p	class:AI	access:public	signature:()
+init	board.cpp	/^void Board::init()$/;"	f	class:Board	signature:()
+init	board.h	/^    void init();$/;"	p	class:Board	access:public	signature:()
+killid	board.h	/^    int killid;$/;"	m	struct:Step	access:public
+load	board.cpp	/^void Board::load(QString filename)$/;"	f	class:Board	signature:(QString filename)
+load	board.h	/^    void load(QString filename);$/;"	p	class:Board	access:public	signature:(QString filename)
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+mousePressEvent	board.cpp	/^void Board::mousePressEvent(QMouseEvent *ev)$/;"	f	class:Board	signature:(QMouseEvent *ev)
+mousePressEvent	board.h	/^    void mousePressEvent(QMouseEvent *ev);$/;"	p	class:Board	access:public	signature:(QMouseEvent *ev)
+moveStone	board.cpp	/^void Board::moveStone(int select, int kill, int row, int col)$/;"	f	class:Board	signature:(int select, int kill, int row, int col)
+moveStone	board.h	/^    void moveStone(int select, int kill, int row, int col);$/;"	p	class:Board	access:public	signature:(int select, int kill, int row, int col)
+moveid	board.h	/^    int moveid;$/;"	m	struct:Step	access:public
+nextStep	ai.cpp	/^Step *AI::nextStep(int level)$/;"	f	class:AI	signature:(int level)
+nextStep	ai.h	/^    Step* nextStep(int level);$/;"	p	class:AI	access:public	signature:(int level)
+onBack	mainwindow.cpp	/^void MainWindow::onBack()$/;"	f	class:MainWindow	signature:()
+onBack	mainwindow.h	/^    void onBack();$/;"	p	class:MainWindow	access:public	signature:()
+onLoad	mainwindow.cpp	/^void MainWindow::onLoad()$/;"	f	class:MainWindow	signature:()
+onLoad	mainwindow.h	/^    void onLoad();$/;"	p	class:MainWindow	access:public	signature:()
+onNew	mainwindow.cpp	/^void MainWindow::onNew()$/;"	f	class:MainWindow	signature:()
+onNew	mainwindow.h	/^    void onNew();$/;"	p	class:MainWindow	access:public	signature:()
+onSave	mainwindow.cpp	/^void MainWindow::onSave()$/;"	f	class:MainWindow	signature:()
+onSave	mainwindow.h	/^    void onSave();$/;"	p	class:MainWindow	access:public	signature:()
+paintEvent	board.cpp	/^void Board::paintEvent(QPaintEvent *)$/;"	f	class:Board	signature:(QPaintEvent *)
+paintEvent	board.h	/^    void paintEvent(QPaintEvent *ev);$/;"	p	class:Board	access:public	signature:(QPaintEvent *ev)
+redTurn	board.h	/^    bool redTurn;$/;"	m	class:Board	access:public
+row	stone.h	/^    int row;$/;"	m	class:Stone	access:public
+rowFrom	board.h	/^    int rowFrom;$/;"	m	struct:Step	access:public
+rowTo	board.h	/^    int rowTo;$/;"	m	struct:Step	access:public
+s	board.h	/^    Stone s[32];$/;"	m	class:Board	access:public
+save	board.cpp	/^void Board::save(QString filename)$/;"	f	class:Board	signature:(QString filename)
+save	board.h	/^    void save(QString filename);$/;"	p	class:Board	access:public	signature:(QString filename)
+selectId	board.h	/^    int selectId; \/\/ 如果selectId是-1，那么说明没有棋子被选中$/;"	m	class:Board	access:public
+selectStone	board.cpp	/^void Board::selectStone(int select)$/;"	f	class:Board	signature:(int select)
+selectStone	board.h	/^    void selectStone(int select);$/;"	p	class:Board	access:public	signature:(int select)
+ss	ai.cpp	/^static int ss[7] = {10000, 100, 100, 500, 250, 250, 100};$/;"	v	file:
+steps	board.h	/^    QList<Step*> steps;$/;"	m	class:Board	access:public
+type	stone.h	/^    Type type;$/;"	m	class:Stone	access:public
+unfakeMove	ai.cpp	/^void AI::unfakeMove(Step *step)$/;"	f	class:AI	signature:(Step *step)
+unfakeMove	ai.h	/^    void unfakeMove(Step* step);$/;"	p	class:AI	access:private	signature:(Step* step)
